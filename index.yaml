@@ -3,7 +3,36 @@ entries:
   wordpress:
   - apiVersion: v1
     appVersion: 5.3.2
-    created: "2021-04-10T15:58:22.390925+05:30"
+    created: "2021-04-10T16:15:01.228973+05:30"
+    dependencies:
+    - condition: mariadb.enabled
+      name: mariadb
+      repository: https://kubernetes-charts.storage.googleapis.com/
+      tags:
+      - wordpress-database
+      version: 7.x.x
+    deprecated: true
+    description: Testing Helm for wordpress different version.
+    digest: ccc4c88a3d5d5f5615bf93effdb1bfac9d1096105699546cc21b558b9b26e228
+    home: http://www.wordpress.com/
+    icon: https://bitnami.com/assets/stacks/wordpress/img/wordpress-stack-220x234.png
+    keywords:
+    - wordpress
+    - cms
+    - blog
+    - http
+    - web
+    - application
+    - php
+    name: wordpress
+    sources:
+    - https://github.com/bitnami/bitnami-docker-wordpress
+    urls:
+    - wordpress-9.1.3.tgz
+    version: 9.1.3
+  - apiVersion: v1
+    appVersion: 5.3.2
+    created: "2021-04-10T16:15:01.220399+05:30"
     dependencies:
     - condition: mariadb.enabled
       name: mariadb
@@ -30,4 +59,4 @@ entries:
     urls:
     - wordpress-9.0.3.tgz
     version: 9.0.3
-generated: "2021-04-10T15:58:22.386154+05:30"
+generated: "2021-04-10T16:15:01.212319+05:30"
